@@ -104,7 +104,7 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/alexstorm/postgres',
+      'dist/modules/richteri/postgres',
       'packages/modules/postgres/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),

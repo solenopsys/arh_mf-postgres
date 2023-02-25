@@ -12,6 +12,6 @@ export class PostgresqlService {
   constructor(private hs: HStreamService) { }
 
   list(query:string): Observable<any> {
-    return this.hs.createStringQuery("alexstorm-hsm-postgres", query, 2).pipe(map(decode)).pipe(tap(k=>console.log("PIPE DATA1",k)))
+    return this.hs.createStringQuery("richteri-hsm-postgres", query, 2).pipe(map(decode)).pipe(tap(k=>console.log("PIPE DATA1",k)))
   }
 }
