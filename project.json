@@ -1,24 +1,24 @@
 {
-  "name": "postgres-invicta",
+  "name": "mf-postgres",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "packages/modules/postgres-invicta/src",
+  "sourceRoot": "packages/modules/mf-postgres/src",
   "prefix": "app",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/modules/postgres-invicta",
-        "index": "packages/modules/postgres-invicta/src/index.html",
-        "main": "packages/modules/postgres-invicta/src/main.ts",
-        "polyfills": "packages/modules/postgres-invicta/src/polyfills.ts",
-        "tsConfig": "packages/modules/postgres-invicta/tsconfig.app.json",
+        "outputPath": "dist/modules/mf-postgres",
+        "index": "packages/modules/mf-postgres/src/index.html",
+        "main": "packages/modules/mf-postgres/src/main.ts",
+        "polyfills": "packages/modules/mf-postgres/src/polyfills.ts",
+        "tsConfig": "packages/modules/mf-postgres/tsconfig.app.json",
         "assets": [
-          "packages/modules/postgres-invicta/src/favicon.ico",
-          "packages/modules/postgres-invicta/src/assets"
+          "packages/modules/mf-postgres/src/favicon.ico",
+          "packages/modules/mf-postgres/src/assets"
         ],
-        "styles": ["packages/modules/postgres-invicta/src/styles.scss"],
+        "styles": ["packages/modules/mf-postgres/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -37,8 +37,8 @@
           ],
           "fileReplacements": [
             {
-              "replace": "packages/modules/postgres-invicta/src/environments/environment.ts",
-              "with": "packages/modules/postgres-invicta/src/environments/environment.prod.ts"
+              "replace": "packages/modules/mf-postgres/src/environments/environment.ts",
+              "with": "packages/modules/mf-postgres/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all"
@@ -58,10 +58,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "postgres-invicta:build:production"
+          "browserTarget": "postgres:build:production"
         },
         "development": {
-          "browserTarget": "postgres-invicta:build:development"
+          "browserTarget": "postgres:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -69,15 +69,15 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "postgres-invicta:build"
+        "browserTarget": "postgres:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "packages/modules/postgres-invicta/**/*.ts",
-          "packages/modules/postgres-invicta/**/*.html"
+          "packages/modules/mf-postgres/**/*.ts",
+          "packages/modules/mf-postgres/**/*.html"
         ]
       }
     },
@@ -85,7 +85,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "packages/modules/postgres-invicta/jest.config.ts",
+        "jestConfig": "packages/modules/mf-postgres/jest.config.ts",
         "passWithNoTests": true
       }
     }

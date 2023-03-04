@@ -8,7 +8,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/modules/postgres',
+  coverageDirectory: '../../coverage/modules/mf-postgres',
   transform: {
     '^.+.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

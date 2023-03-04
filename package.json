@@ -1,5 +1,5 @@
 {
-  "name": "@solenopsys/sc-fm-postgres-invicta",
+  "name": "@solenopsys/mf-postgres",
   "version": "0.9.1",
   "scripts": {
     "test": "node index.js",

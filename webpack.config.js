@@ -48,7 +48,7 @@ module.exports = {
       name: 'postgres',
       filename: 'remoteEntry.js',
       exposes: {
-        './Module': 'packages/modules/postgres/src/app/entry.module.ts',
+        './Module': 'packages/modules/mf-postgres/src/app/entry.module.ts',
       },
       shared: share({
         '@angular/core': {
@@ -104,8 +104,8 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/richteri/postgres',
-      'packages/modules/postgres/src/assets/menu.json'
+      'dist/modules/mf-richteri/postgres',
+      'packages/modules/mf-postgres/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),
   ],
