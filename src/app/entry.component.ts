@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'hyperconverged-postgres-entry',
+  selector: 'sc-postgres-entry',
   template: `<div class="remote-entry">
     <h2>postgres's Remote Entry Component</h2>
   </div>`,
