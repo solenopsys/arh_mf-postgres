@@ -104,7 +104,7 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/mf-richteri/postgres',
+      'dist/modules/mf-postgres',
       'packages/modules/mf-postgres/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),
